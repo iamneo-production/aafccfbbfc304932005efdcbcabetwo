@@ -9,6 +9,9 @@ h1{
     align-items: center;
     justify-content: center;
     margin: 35px;
+    width:100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3,auto);
 }
 .row{
     display: flex;
@@ -49,5 +52,6 @@ button:hover{
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 #reset:hover{
-    back
+    background-color: black;
+    color:aliceblue;
 }
