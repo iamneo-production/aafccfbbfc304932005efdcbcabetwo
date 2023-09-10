@@ -52,6 +52,20 @@ function checkWinner(){
         }
     }
     if(isWon){
-        statusTxt.textContent='${player} won'
+        statusTxt.textContent='${player} won';
+        running=flase;
+    }else if(!options.includes("")){
+        statusTxt.textContent='Game Draw!';
+        running=flase;    
+    }else{
+        changeplayer();
     }
+}
+
+function restartGame(){
+    options=["","","","","","","","",""];
+    currentPlayer=x;
+    player="X";
+    running=true;
+    statusTxt.textContent='${player} Your Turn'
 }
