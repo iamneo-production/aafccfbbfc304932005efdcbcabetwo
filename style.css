@@ -20,5 +20,14 @@ h1{
     width: 75px;
     border: 1px inset;
     border-radius: 25px;
-    
+    align-items: center;
+    font-size: 50px;
+    font-weight: 500;
+    color:black;
+    text-shadow: 5px;
+    background-color: azure;
+}
+button:hover{
+    background-color: cornsilk;
+    cursor: pointer;
 }
