@@ -38,6 +38,20 @@ function checkWinner(){
     let isWon=flase;
     for(let i=0;i<win.length;i++){
         const condition=win[i]; //[0,1,2]
-        const box1=options
+        const box1=options[condition[0]]; //x
+        const box2=options[condition[1]]; //''
+        const box3=options[condition[2]]; //''
+        if(box1==""||box2==""||box3==""){
+            continue;
+        }
+        if(box1==box2 && box2==box3){
+            isWon=true;
+            boxs[condition[0]].classList.add('win');
+            boxs[condition[1]].classList.add('win');
+            boxs[condition[2]].classList.add('win');
+        }
+    }
+    if(isWon){
+        statusTxt.textContent='${player} won'
     }
 }
