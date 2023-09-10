@@ -19,5 +19,25 @@ function init(){
     running=true;
 }
 function boxclick(){
-    const index=this.dataset.index
+    const index=this.dataset.index;
+    if(options[index]!=""|| !running){
+        return;
+    }
+    updateBox(this,index);
+    checkWinner();
+}
+function updateBox(box,index){
+    options[index]=player;
+    box.innerHTML=currentPlayer;
+}
+function changeplayer(){
+    player=(player=='X') ? "O" : "X";
+    statusTxt.textContent='${player} Your Turn';
+}
+function checkWinner(){
+    let isWon=flase;
+    for(let i=0;i<win.length;i++){
+        const condition=win[i]; //[0,1,2]
+        const box1=options
+    }
 }
