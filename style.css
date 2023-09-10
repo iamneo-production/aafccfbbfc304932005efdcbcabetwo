@@ -31,3 +31,23 @@ button:hover{
     background-color: cornsilk;
     cursor: pointer;
 }
+.result-conatiner{
+    background-color: ghostwhite;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:200px;
+}
+.result{
+    background-color: aliceblue;
+    text-shadow: 2px;
+    font-size: 25px;
+}
+#reset{
+    border: 1px solid black;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#reset:hover{
+    back
+}
