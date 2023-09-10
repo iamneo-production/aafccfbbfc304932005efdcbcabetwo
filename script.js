@@ -1,5 +1,4 @@
 const { init } = require("express/lib/application");
-
 const boxs=document.querySelectorAll('.btn');
 const statusTxt=document.querySelector('.result');
 const btnReset=document.querySelector('#reset');
