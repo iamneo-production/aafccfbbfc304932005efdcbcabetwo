@@ -21,7 +21,7 @@ h1{
 .btn{
     height: 75px;
     width: 75px;
-    border: 1px inset;
+    border: 1px inset black;
     border-radius: 25px;
     align-items: center;
     font-size: 50px;
@@ -29,6 +29,7 @@ h1{
     color:black;
     text-shadow: 5px;
     background-color: azure;
+    display: flex;
 }
 button:hover{
     background-color: cornsilk;
@@ -54,4 +55,7 @@ button:hover{
 #reset:hover{
     background-color: black;
     color:aliceblue;
+}
+.btn{
+    
 }
